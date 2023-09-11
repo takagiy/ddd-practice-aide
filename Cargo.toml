@@ -1,0 +1,10 @@
+[workspace]
+members = ["crates/*"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+tracing = "0.1.37"
+clap = { version = "4.4.2", features = ["derive", "env"] }

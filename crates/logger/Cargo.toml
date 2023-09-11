@@ -1,0 +1,16 @@
+[package]
+name = "mysns-logger"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+clap = { workspace = true }
+ctor = "0.2.4"
+time = { version = "0.3.28", features = ["formatting"] }
+tracing = { workspace = true }
+tracing-subscriber = { version = "0.3.17", features = [
+  "json",
+  "time",
+  "local-time",
+  "env-filter",
+] }
